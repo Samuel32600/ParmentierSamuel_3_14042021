@@ -1,0 +1,36 @@
+#box-footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    justify-content: center;
+    color: white;
+    padding: 20px 0 20px 35px;
+    h3{
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+}
+  
+.box-link {
+  display: flex;
+  align-items: center;
+  i{
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  .box-link__text{
+    text-decoration: none;
+    color: inherit;
+    padding: 3px 0;
+  }
+}   
+    
+
+  
+  
+  
+  
+  
