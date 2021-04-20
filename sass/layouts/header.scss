@@ -1,0 +1,18 @@
+/*header*/
+#box-header{    
+    width: 100%;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+    a{left: 15px;
+    position:absolute;
+    color: black;
+    }
+    .box-header__title{
+        height: 30px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        padding: 15px 0;       
+    }         
+  }

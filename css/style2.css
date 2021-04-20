@@ -1,0 +1,126 @@
+@media screen and (max-width: 768px) {
+  /*color pannel*/
+  /*color bar search city*/
+  /*color background box + background icon*/
+  body {
+    margin: 0;
+  }
+
+  /*header*/
+  #box-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #box-header a {
+    left: 15px;
+    position: absolute;
+    color: black;
+  }
+  #box-header .box-header__title {
+    height: 30px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  /*picture*/
+  #picture img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  #menu {
+    width: 100%;
+    background-color: #f6f6f6;
+    border-radius: 40px 40px 0 0;
+  }
+
+  /*title-resto*/
+  #title-resto {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  #title-resto h1 {
+    font-style: italic;
+  }
+
+  .selector {
+    width: 95%;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: blue;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 3px 3px 2px #ededed;
+  }
+  .selector h3 {
+    margin: 2px 0;
+    padding: 0 10px;
+  }
+
+  .selector__text {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+  }
+  .selector__text p {
+    margin: 0;
+  }
+  .selector__text .price {
+    font-weight: bold;
+  }
+
+  /*order*/
+  #box-order {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #box-order .box-order__btn {
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+  }
+
+  #box-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    justify-content: center;
+    color: white;
+    padding: 20px 0 20px 35px;
+  }
+  #box-footer h3 {
+    font-style: italic;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 10px;
+  }
+
+  .box-link {
+    display: flex;
+    align-items: center;
+  }
+  .box-link i {
+    width: 20px;
+    text-align: center;
+    margin-right: 10px;
+  }
+  .box-link .box-link__text {
+    text-decoration: none;
+    color: inherit;
+    padding: 3px 0;
+  }
+}
+
+/*# sourceMappingURL=style2.css.map */
