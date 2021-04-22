@@ -1,18 +1,12 @@
 @media screen and (max-width:768px)
 {
 
-/*color pannel*/
-$color-primary:#9356DC;
-$color-secondary:#FF79DA;
-$color-tertiary:#99E2D0;
-/*color bar search city*/
-$color-search-city:#eaeaea;
-/*color background box + background icon*/
-$color-background:#f6f6f6;
+@import "./base/color.scss";
 
 body{
     margin:0;
   }
+  
 @import "./layouts/header.scss";
 
 /*picture*/

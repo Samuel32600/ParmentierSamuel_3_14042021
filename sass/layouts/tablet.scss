@@ -1,0 +1,26 @@
+/*size screen for tablet*/
+@media screen and(min-width:768px) and (max-width:992px) {
+
+  /*section2-operation*/
+  .box-operation__3choice {
+    flex-direction: row;
+  }
+
+  .choice {
+    width: 30%;
+    height: 100px;
+    margin-bottom: 0;
+  }
+
+  /*--section3-Resto--*/
+  .box-resto__menu a {
+    width: 48%;
+  }
+
+  /*footer*/
+  .box-footer__text {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 35px;
+  }
+}
