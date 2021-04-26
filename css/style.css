@@ -1,6 +1,23 @@
+/*--color--*/
 /*color pannel*/
 /*color bar search city*/
 /*color background box + background icon*/
+/*--font family--*/
+/*Shrikhand*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*Roboto*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+.logo, .title {
+  font-family: "Shrikhand", cursive, sans-serif;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, p, a {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+/*--btn--*/
 body {
   margin: 0;
 }
@@ -30,10 +47,11 @@ body {
 }
 .select-city input {
   border: none;
-  width: 120px;
+  width: 140px;
   margin-left: 10px;
   font-weight: bold;
   background-color: #eaeaea;
+  font-size: large;
 }
 
 .select {
@@ -52,7 +70,7 @@ body {
 .select .select__button {
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   border-radius: 20px;
-  padding: 15px;
+  padding: 12px 25px;
   color: white;
   font-weight: bold;
   text-decoration: none;
@@ -204,7 +222,6 @@ body {
 
 .fas.fa-heart {
   font-size: 25px;
-  transition-duration: 2s;
   color: #9356DC;
 }
 
@@ -231,11 +248,10 @@ body {
   color: white;
   padding: 20px 0 20px 35px;
 }
-#box-footer h3 {
-  font-style: italic;
-  font-weight: bold;
+#box-footer .logo {
   margin: 0;
   padding-bottom: 10px;
+  font-size: 1.5em;
 }
 
 .box-footer__text {

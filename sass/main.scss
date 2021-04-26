@@ -1,4 +1,9 @@
+/*--color--*/
 @import "./base/color.scss";
+/*--font family--*/
+@import "./base/font.scss";
+/*--btn--*/
+@import "./base/btn.scss";
 
 body {
   margin: 0;
@@ -29,10 +34,11 @@ body {
 
   input {
     border: none;
-    width: 120px;
+    width: 140px;
     margin-left: 10px;
     font-weight: bold;
     background-color: $color-search-city;
+    font-size: large;
   }
 }
 
@@ -51,18 +57,9 @@ body {
   }
 
   .select__button {
-    background: linear-gradient(175deg, $color-secondary, $color-primary);
-    border-radius: 20px;
-    padding: 15px;
-    color: white;
-    font-weight: bold;
-    text-decoration: none;
-
-    &:hover {
-      opacity: 0.8;
+    @include btn;
     }
   }
-}
 
 /*--section2-operation--*/
 #box-operation {
@@ -216,7 +213,6 @@ body {
 
 .fas.fa-heart {
   font-size: 25px;
-  transition-duration: 2s;
   color: $color-primary;
 }
 

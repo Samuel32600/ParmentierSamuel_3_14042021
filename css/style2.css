@@ -1,132 +1,210 @@
-@media screen and (max-width: 768px) {
-  /*color pannel*/
-  /*color bar search city*/
-  /*color background box + background icon*/
-  body {
-    margin: 0;
-  }
+/*color pannel*/
+/*color bar search city*/
+/*color background box + background icon*/
+/*Shrikhand*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+/*Roboto*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+.logo, .title {
+  font-family: "Shrikhand", cursive, sans-serif;
+  box-sizing: border-box;
+}
 
-  /*header*/
-  #box-header {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #box-header a {
-    left: 15px;
-    position: absolute;
-    color: black;
-  }
-  #box-header .box-header__title {
-    height: 30px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    padding: 15px 0;
-  }
+h1, h2, h3, p, a {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
 
-  /*picture*/
-  #picture img {
-    height: 250px;
-    width: 100%;
-    object-fit: cover;
-  }
+body {
+  margin: 0;
+}
 
-  #menu {
-    width: 100%;
-    background-color: #f6f6f6;
-    border-radius: 40px 40px 0 0;
-  }
+/*header*/
+#box-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#box-header a {
+  left: 5%;
+  position: absolute;
+  color: black;
+}
+#box-header .box-header__title {
+  height: 30px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  padding: 15px 0;
+}
 
-  /*title-resto*/
-  #title-resto {
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  #title-resto h1 {
-    font-style: italic;
-  }
+/*picture*/
+#picture {
+  position: relative;
+}
 
-  .selector {
-    width: 95%;
-    height: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: blue;
-    margin: auto;
-    border-radius: 20px;
-    box-shadow: 3px 3px 2px #ededed;
-  }
-  .selector h3 {
-    margin: 2px 0;
-    padding: 0 10px;
-  }
+#picture img {
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+}
 
-  .selector__text {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 10px;
-  }
-  .selector__text p {
-    margin: 0;
-  }
-  .selector__text .price {
-    font-weight: bold;
-  }
+/*--section-menu--*/
+#menu {
+  width: 100%;
+  background-color: #f6f6f6;
+  border-radius: 40px 40px 0 0;
+  padding: 15px 0;
+  position: relative;
+  margin-top: -50px;
+}
 
-  /*order*/
-  #box-order {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-  #box-order .box-order__btn {
-    border-radius: 20px;
-    padding: 10px;
-    color: white;
-    font-weight: bold;
-  }
+.card-menu {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
 
-  /*footer*/
-  #box-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #353535;
-    justify-content: center;
-    color: white;
-    padding: 20px 0 20px 35px;
-  }
-  #box-footer h3 {
-    font-style: italic;
-    font-weight: bold;
-    margin: 0;
-    padding-bottom: 10px;
-  }
+.card-menu__title-resto {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .box-footer__text {
-    display: flex;
-    flex-direction: column;
-  }
+.menu__selector-food {
+  border-bottom: 2px solid #99E2D0;
+  width: 40px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
 
-  .box-link {
-    display: flex;
-    align-items: center;
-  }
-  .box-link i {
-    width: 20px;
-    text-align: center;
-    margin-right: 10px;
-  }
-  .box-link .box-link__text {
-    text-decoration: none;
-    color: inherit;
-    padding: 3px 0;
-  }
+.selector {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 3px 3px 2px #ededed;
+  margin-bottom: 12px;
+  overflow: hidden;
+  position: relative;
+}
+.selector:hover .price {
+  transform: translate(-60px);
+}
+.selector:hover .checked {
+  transform: translate(-60px);
+}
+.selector:hover .checked i {
+  transform: rotate(1turn);
+}
+
+.selector__text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  overflow: hidden;
+  width: 80%;
+}
+.selector__text h3 {
+  margin: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.selector__text p {
+  margin: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.price {
+  font-weight: bold;
+  width: 60px;
+  height: 100%;
+  text-align: center;
+  background-color: white;
+  transition: transform 1s ease-in-out;
+  line-height: 96px;
+}
+
+.checked {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 100%;
+  border-radius: 0 20px 20px 0;
+  background-color: #99E2D0;
+  position: absolute;
+  right: -60px;
+  transition: transform 1s ease-in-out;
+}
+.checked i {
+  color: white;
+  font-size: 1.5em;
+  transition: transform 1s ease-in-out;
+}
+
+.box-order {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.box-order__btn {
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  border-radius: 20px;
+  padding: 12px 25px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.box-order__btn:hover {
+  opacity: 0.8;
+}
+
+/*footer*/
+#box-footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #353535;
+  justify-content: center;
+  color: white;
+  padding: 20px 0 20px 35px;
+}
+#box-footer .logo {
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 1.5em;
+}
+
+.box-footer__text {
+  display: flex;
+  flex-direction: column;
+}
+
+.box-link {
+  display: flex;
+  align-items: center;
+}
+.box-link i {
+  width: 20px;
+  text-align: center;
+  margin-right: 10px;
+}
+.box-link .box-link__text {
+  text-decoration: none;
+  color: inherit;
+  padding: 3px 0;
 }
 
 /*# sourceMappingURL=style2.css.map */
