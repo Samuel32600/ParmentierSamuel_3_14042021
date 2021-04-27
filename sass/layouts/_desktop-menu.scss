@@ -1,25 +1,64 @@
 /*size screen for desktop*/
 @media screen and(min-width:992px) and (max-width:1800px) {
 
+    #menu {
+        width: 98%;
+        margin: -50px auto 0 auto;
+        border: 1px solid black;
+        border-bottom: none;
+    }
+
     .card-menu {
-        width: 100%;
-        align-items: center;
+        width: 95%;
     }
 
-    .card-menu__title-resto {
+    .boxtest {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    .selector {
+        height: 140px;        
+        flex-direction: column;
         justify-content: center;
+        margin-bottom: 0px;
+        margin: 0 10px;
 
-        h1 {
-            padding: 0 30px;
+        &:hover .selector__text {
+            margin-right: 0;
+                      
         }
 
-        i {
-            padding: 0 30px;
+        &:hover .price {
+            transform: translate(0px);
         }
-
     }
 
+    .selector__text {
+        
+        flex-direction: column;
+        align-items: center;        
+        width: 100%;
+        padding-left: 0px;        
+    }
 
+    .price {
+        height: 20px;
+        line-height: 50px;
+        font-size: 1.4em;
+    }
 
-
+    .checked {
+        width: 60px;
+        height: 50px;
+        border-radius: 10px 0 20px 0;
+        bottom: 0px;
+    }
+    .menu__selector-food {
+        
+        width: 30%;
+        
+    }
 }

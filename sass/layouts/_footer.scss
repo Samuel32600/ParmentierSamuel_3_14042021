@@ -39,6 +39,10 @@
 /*--media-queries--*/
 /*size screen for tablet*/
 @media screen and(min-width:768px) and (max-width:992px) {
+  #box-footer{
+    height: 100px;
+  }
+  
   .box-footer__text {
     flex-direction: row;
     justify-content: space-between;
@@ -49,8 +53,9 @@
 /*size screen for desktop*/
 @media screen and(min-width:992px) and (max-width:1800px) {
   #box-footer {
-    align-items: flex-start;
+    align-items: center;
     padding: 20px 0 20px 65px;
+    height: 100px;
   }
 
   .box-footer__text {

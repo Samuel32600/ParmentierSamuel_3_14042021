@@ -51,6 +51,7 @@ body {
 #picture img {
   height: 260px;
   width: 100%;
+  max-width: 100%;
   object-fit: cover;
 }
 
@@ -104,6 +105,9 @@ body {
 .selector:hover .price {
   transform: translate(-60px);
 }
+.selector:hover .selector__text {
+  margin-right: 60px;
+}
 .selector:hover .checked {
   transform: translate(-60px);
 }
@@ -115,7 +119,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 15px;
-  width: 350px;
+  width: 80%;
   overflow: hidden;
 }
 .selector__text h3 {
@@ -137,7 +141,7 @@ body {
   height: 100%;
   text-align: center;
   background-color: white;
-  transition: transform 1s ease-in-out;
+  transition: transform 0.9s ease-in-out;
   line-height: 96px;
 }
 
@@ -271,6 +275,10 @@ body {
 /*--media-queries--*/
 /*size screen for tablet*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  #box-footer {
+    height: 100px;
+  }
+
   .box-footer__text {
     flex-direction: row;
     justify-content: space-between;
@@ -280,8 +288,9 @@ body {
 /*size screen for desktop*/
 @media screen and (min-width: 992px) and (max-width: 1800px) {
   #box-footer {
-    align-items: flex-start;
+    align-items: center;
     padding: 20px 0 20px 65px;
+    height: 100px;
   }
 
   .box-footer__text {
@@ -295,26 +304,70 @@ body {
 /*--media-queries-tablet--*/
 /*size screen for tablet*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  .card-menu {
+  #menu {
     width: 80%;
+    margin: -50px auto 0 auto;
+    border: 1px solid black;
+    border-bottom: none;
   }
 }
 /*--media-queries-desktop--*/
 /*size screen for desktop*/
 @media screen and (min-width: 992px) and (max-width: 1800px) {
-  .card-menu {
-    width: 100%;
-    align-items: center;
+  #menu {
+    width: 98%;
+    margin: -50px auto 0 auto;
+    border: 1px solid black;
+    border-bottom: none;
   }
 
-  .card-menu__title-resto {
+  .card-menu {
+    width: 95%;
+  }
+
+  .boxtest {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  .selector {
+    height: 140px;
+    flex-direction: column;
     justify-content: center;
+    margin-bottom: 0px;
+    margin: 0 10px;
   }
-  .card-menu__title-resto h1 {
-    padding: 0 30px;
+  .selector:hover .selector__text {
+    margin-right: 0;
   }
-  .card-menu__title-resto i {
-    padding: 0 30px;
+  .selector:hover .price {
+    transform: translate(0px);
+  }
+
+  .selector__text {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-left: 0px;
+  }
+
+  .price {
+    height: 20px;
+    line-height: 50px;
+    font-size: 1.4em;
+  }
+
+  .checked {
+    width: 60px;
+    height: 50px;
+    border-radius: 10px 0 20px 0;
+    bottom: 0px;
+  }
+
+  .menu__selector-food {
+    width: 30%;
   }
 }
 

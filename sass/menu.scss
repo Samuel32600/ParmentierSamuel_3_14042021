@@ -22,6 +22,7 @@ body {
 #picture img {
     height: 260px;
     width: 100%;
+    max-width: 100%;
     object-fit: cover;
 }
 
@@ -33,6 +34,7 @@ body {
     padding: 15px 0;
     position: relative;
     margin-top: -50px;
+    
 }
 
 .card-menu {
@@ -77,12 +79,16 @@ body {
         transform: translate(-60px);
     }
 
+    &:hover .selector__text {
+        margin-right:60px;        
+    }
+
     &:hover .checked {
-        transform: translate(-60px);
+        transform: translate(-60px);        
     }
 
     &:hover .checked i {
-        transform: rotate(1turn);
+        transform: rotate(1turn);       
     }
 }
 
@@ -90,7 +96,7 @@ body {
     display: flex;
     flex-direction: column;
     padding-left: 15px;
-    width: 350px;
+    width: 80%;
     overflow: hidden;
 
     h3 {
@@ -114,7 +120,7 @@ body {
     height: 100%;
     text-align: center;
     background-color: white;
-    transition: transform 1s ease-in-out;
+    transition: transform 0.9s ease-in-out;
     line-height: 96px;
 }
 
@@ -133,7 +139,7 @@ body {
     i {
         color: white;
         font-size: 1.5em;
-        transition: transform 1.0s ease-in-out;
+        transition: transform 1s ease-in-out;
     }
 }
 
