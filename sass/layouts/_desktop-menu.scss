@@ -1,0 +1,25 @@
+/*size screen for desktop*/
+@media screen and(min-width:992px) and (max-width:1800px) {
+
+    .card-menu {
+        width: 100%;
+        align-items: center;
+    }
+
+    .card-menu__title-resto {
+        justify-content: center;
+
+        h1 {
+            padding: 0 30px;
+        }
+
+        i {
+            padding: 0 30px;
+        }
+
+    }
+
+
+
+
+}

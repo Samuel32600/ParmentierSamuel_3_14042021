@@ -35,3 +35,29 @@
     padding: 3px 0;
   }
 }
+
+/*--media-queries--*/
+/*size screen for tablet*/
+@media screen and(min-width:768px) and (max-width:992px) {
+  .box-footer__text {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 35px;
+  }
+}
+
+/*size screen for desktop*/
+@media screen and(min-width:992px) and (max-width:1800px) {
+  #box-footer {
+    align-items: flex-start;
+    padding: 20px 0 20px 65px;
+  }
+
+  .box-footer__text {
+    flex-direction: row;
+  }
+
+  .box-link {
+    margin-right: 105px;
+  }
+}

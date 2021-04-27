@@ -1,7 +1,9 @@
 /*--color--*/
 @import "./base/color.scss";
+
 /*--font family--*/
 @import "./base/font.scss";
+
 /*--btn--*/
 @import "./base/btn.scss";
 
@@ -39,6 +41,7 @@ body {
     font-weight: bold;
     background-color: $color-search-city;
     font-size: large;
+    outline: none;
   }
 }
 
@@ -92,6 +95,7 @@ body {
   /*animation*/
   &:hover {
     background-color: $color-background--transition;
+    box-shadow: 3px 3px 2px #868686;
 
     i {
       color: $color-primary;
@@ -231,9 +235,10 @@ body {
 }
 
 /*--footer--*/
-@import "./layouts/footer";
+@import "./layouts/footer.scss";
 
-
+/*--media-queries-tablet--*/
 @import "./layouts/tablet.scss";
 
-@import "./layouts/desktop.scss"
+/*--media-queries-desktop--*/
+@import "./layouts/desktop.scss";

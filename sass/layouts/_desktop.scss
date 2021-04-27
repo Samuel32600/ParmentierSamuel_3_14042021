@@ -1,6 +1,6 @@
 /*size screen for desktop*/
 @media screen and(min-width:992px) and (max-width:1800px) {
-    
+
     /*section2-operation*/
     .box-operation__3choice {
         flex-direction: row;
@@ -18,19 +18,4 @@
     .box-select-resto__picture img {
         height: 300px
     }
-
-    /*footer*/
-    #box-footer {
-        align-items: flex-start;
-        padding: 20px 0 20px 65px;
-    }
-
-    .box-footer__text {
-        flex-direction: row;
-    }
-
-    .box-link {
-        margin-right: 105px;
-    }
-
 }
