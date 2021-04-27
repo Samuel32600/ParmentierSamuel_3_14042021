@@ -304,6 +304,7 @@ body {
 /*--media-queries-tablet--*/
 /*size screen for tablet*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
+  /*--section-menu--*/
   #menu {
     width: 80%;
     margin: -50px auto 0 auto;
@@ -314,6 +315,7 @@ body {
 /*--media-queries-desktop--*/
 /*size screen for desktop*/
 @media screen and (min-width: 992px) and (max-width: 1800px) {
+  /*--section-menu--*/
   #menu {
     width: 98%;
     margin: -50px auto 0 auto;
@@ -354,9 +356,12 @@ body {
   }
 
   .price {
-    height: 20px;
-    line-height: 50px;
+    height: auto;
+    line-height: 40px;
     font-size: 1.4em;
+    border: 1px solid #99E2D0;
+    border-radius: 100%;
+    background-color: #99E2D0;
   }
 
   .checked {
