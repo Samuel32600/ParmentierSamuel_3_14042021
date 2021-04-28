@@ -61,8 +61,8 @@ body {
 
   .select__button {
     @include btn;
-    }
   }
+}
 
 /*--section2-operation--*/
 #box-operation {
@@ -211,28 +211,7 @@ body {
 }
 
 /*heart*/
-.far.fa-heart {
-  font-size: 25px;
-}
-
-.fas.fa-heart {
-  font-size: 25px;
-  color: $color-primary;
-}
-
-
-.custom-checkbox input[type="checkbox"],
-.custom-checkbox .checked {
-  display: none;
-}
-
-.custom-checkbox input[type="checkbox"]:checked~.checked {
-  display: inline-block;
-}
-
-.custom-checkbox input[type="checkbox"]:checked~.unchecked {
-  display: none;
-}
+@import"./base/animation-heart";
 
 /*--footer--*/
 @import "./layouts/footer.scss";

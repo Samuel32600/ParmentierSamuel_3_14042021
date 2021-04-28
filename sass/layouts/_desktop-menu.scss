@@ -1,9 +1,9 @@
 /*size screen for desktop*/
-@media screen and(min-width:992px) and (max-width:1800px) {
+@media screen and(min-width:992px) {
 
     /*--section-menu--*/
     #menu {
-        width: 98%;
+        width: 95%;
         margin: -50px auto 0 auto;
         border: 1px solid black;
         border-bottom: none;
@@ -21,11 +21,12 @@
     }
 
     .selector {
-        height: 140px;
+        height: 150px;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         margin-bottom: 0px;
         margin: 0 10px;
+        box-shadow: 4px 4px 2px #b3b1b1;
 
         &:hover .selector__text {
             margin-right: 0;
@@ -38,11 +39,21 @@
     }
 
     .selector__text {
-
-        flex-direction: column;
         align-items: center;
-        width: 100%;
+        width: 90%;
         padding-left: 0px;
+
+        h3 {
+            white-space: normal;
+            overflow-wrap: break-word;
+            text-align: center;
+        }
+
+        p {
+            white-space: normal;
+            overflow-wrap: break-word;
+            text-align: center;
+        }
     }
 
     .price {

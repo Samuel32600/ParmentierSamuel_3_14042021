@@ -1,0 +1,42 @@
+/*heart*/
+
+/*no-show for heart checked + function checkbox */
+.custom-checkbox input[type="checkbox"],
+.custom-checkbox .checked-icon {
+  display: none;
+}
+
+/*show for heart checked*/
+.custom-checkbox input[type="checkbox"]:checked~.checked-icon {
+  display: inline-block;
+}
+
+/*no-show for heart unchecked*/
+.custom-checkbox input[type="checkbox"]:checked~.unchecked-icon {
+  display: none;
+}
+
+/*heart unchecked*/
+.far.fa-heart {
+  font-size: 2em;
+}
+
+/*heart checked*/
+.fas.fa-heart {
+  color: transparent;
+  background: linear-gradient(175deg,$color-secondary, $color-primary);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  font-size: 2em;
+  animation: heart 1s cubic-bezier(.97,.03,.98,.36) forwards;  
+}
+
+@keyframes heart {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}

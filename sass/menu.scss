@@ -34,7 +34,7 @@ body {
     padding: 15px 0;
     position: relative;
     margin-top: -50px;
-    
+
 }
 
 .card-menu {
@@ -50,6 +50,10 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
+/*heart*/
+@import"./base/animation-heart";
+
 
 .menu__selector-food {
     border-bottom: 2px solid $color-tertiary;
@@ -74,21 +78,20 @@ body {
     opacity: 0;
     animation: cascade 2.5s cubic-bezier(0, 0, 0, 1) forwards;
 
-
     &:hover .price {
         transform: translate(-60px);
     }
 
     &:hover .selector__text {
-        margin-right:60px;        
+        margin-right: 60px;
     }
 
     &:hover .checked {
-        transform: translate(-60px);        
+        transform: translate(-60px);
     }
 
     &:hover .checked i {
-        transform: rotate(1turn);       
+        transform: rotate(1turn);
     }
 }
 

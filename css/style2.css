@@ -79,6 +79,47 @@ body {
   justify-content: space-between;
 }
 
+/*heart*/
+/*heart*/
+/*no-show for heart checked + function checkbox */
+.custom-checkbox input[type=checkbox],
+.custom-checkbox .checked-icon {
+  display: none;
+}
+
+/*show for heart checked*/
+.custom-checkbox input[type=checkbox]:checked ~ .checked-icon {
+  display: inline-block;
+}
+
+/*no-show for heart unchecked*/
+.custom-checkbox input[type=checkbox]:checked ~ .unchecked-icon {
+  display: none;
+}
+
+/*heart unchecked*/
+.far.fa-heart {
+  font-size: 2em;
+}
+
+/*heart checked*/
+.fas.fa-heart {
+  color: transparent;
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
+  background-clip: initial;
+  -webkit-background-clip: text;
+  font-size: 2em;
+  animation: heart 1s cubic-bezier(0.97, 0.03, 0.98, 0.36) forwards;
+}
+
+@keyframes heart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .menu__selector-food {
   border-bottom: 2px solid #99E2D0;
   width: 40px;
@@ -229,11 +270,11 @@ body {
   color: white;
   font-weight: bold;
   text-decoration: none;
-  box-shadow: 2px 2px 1px #ededed;
+  box-shadow: 0px 0px 0px 3px #ededed;
 }
 .box-order__btn:hover {
   opacity: 0.8;
-  box-shadow: 2px 2px 1px #868686;
+  box-shadow: 0px 0px 0px 3px #868686;
 }
 
 /*--footer--*/
@@ -286,7 +327,7 @@ body {
   }
 }
 /*size screen for desktop*/
-@media screen and (min-width: 992px) and (max-width: 1800px) {
+@media screen and (min-width: 992px) {
   #box-footer {
     align-items: center;
     padding: 20px 0 20px 65px;
@@ -314,10 +355,10 @@ body {
 }
 /*--media-queries-desktop--*/
 /*size screen for desktop*/
-@media screen and (min-width: 992px) and (max-width: 1800px) {
+@media screen and (min-width: 992px) {
   /*--section-menu--*/
   #menu {
-    width: 98%;
+    width: 95%;
     margin: -50px auto 0 auto;
     border: 1px solid black;
     border-bottom: none;
@@ -335,11 +376,12 @@ body {
   }
 
   .selector {
-    height: 140px;
+    height: 150px;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: 0px;
     margin: 0 10px;
+    box-shadow: 4px 4px 2px #b3b1b1;
   }
   .selector:hover .selector__text {
     margin-right: 0;
@@ -349,10 +391,19 @@ body {
   }
 
   .selector__text {
-    flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 90%;
     padding-left: 0px;
+  }
+  .selector__text h3 {
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+  .selector__text p {
+    white-space: normal;
+    overflow-wrap: break-word;
+    text-align: center;
   }
 
   .price {
